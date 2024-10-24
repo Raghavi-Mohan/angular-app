@@ -1,0 +1,30 @@
+<style>
+    .home {
+      max-width: 5.2rem;
+      max-width: 1200px;
+      justify-content: center;
+      display: grid;
+      align-items: center;
+      float: center;
+      margin-top: 300px;
+    }
+    a {
+      max-width: 5.2rem;
+      max-width: 200px;
+      align-items: center;
+      display: grid;
+      justify-content: center;
+      float: center;
+    }
+</style>
+
+<div class="gallery">
+    <div *ngFor="let video of videos" class="video-item">
+      <img [src]="video.url" [alt]="video.name" />
+      <p>{{ video.name }}</p>
+    </div>
+  </div>
+  <div class="home">
+    <a routerLink="/">Home</a>
+    <a routerLink="/page1">Page1</a>
+  </div>

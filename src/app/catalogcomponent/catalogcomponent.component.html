@@ -1,0 +1,43 @@
+<style>
+    .home {
+      max-width: 5.2rem;
+      max-width: 1200px;
+      justify-content: center;
+      display: grid;
+      align-items: center;
+      float: center;
+      margin-top: 100px;
+      margin-bottom: 30px;
+    }
+    .description {
+      max-width: 5.2rem;
+      max-width: 1200px;
+      justify-content: center;
+      display: grid;
+      align-items: center;
+      float: center;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+    a {
+      max-width: 5.2rem;
+      max-width: 200px;
+      align-items: center;
+      display: grid;
+      justify-content: center;
+      float: center;
+    }
+</style>
+<div class="description">
+   <p>Discover how we blend traditional art with modern technology to create stunning, interactive experiences. Join us on this journey to inspire and unleash your imagination through the fusion of color and code!</p>
+  </div>
+<div class="gallery">
+    <div *ngFor="let image of images" class="image-item">
+      <img [src]="image.url" [alt]="image.name" />
+      <p>{{ image.name }}</p>
+    </div>
+  </div>
+  <div class="home">
+    <a routerLink="/">Home</a>
+    <a routerLink="/page2">Page2</a>
+  </div>
